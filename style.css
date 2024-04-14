@@ -3,7 +3,9 @@
   }
   
   .slider {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
     margin-top: 5px;
   }
   
@@ -25,3 +27,7 @@
     background-color: #d32f2f;
   }
   
+  #gameWorld {
+    display: block;
+    margin: 0 auto;
+}

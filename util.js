@@ -1,6 +1,6 @@
 /** Global Parameters Object */
 const PARAMETERS = {
-    dimension: 100,
+    dimension: 75,
     size: 10, // 1000/dimension
     
 };

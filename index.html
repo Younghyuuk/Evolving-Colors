@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="gameWorld" width="1000" height="1000" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <canvas id="gameWorld" width="750" height="750" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
     <div class="slider-container">
         <label for="plantgrowth">Plant Growth</label>
         <input type="range" id="plantgrowth" min="1" max="80" value="20" class="slider">
@@ -29,5 +29,7 @@
     <button type="button" id="plant" class="button">Add Plant</button>
     <button type="button" id="animat" class="button">Add Animat</button>
     <button type="button" id="clear" class="button">Clear All</button>
+    <button id="initCluster">Initialize Central Cluster</button>
+    <button id="initCorner">Initialize Corner</button>
 </body>
 </html>

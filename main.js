@@ -22,6 +22,24 @@ ASSET_MANAGER.downloadAll(() => {
 		automata.clearPlants();
 	});
 
+
+	
+		// Attach event listener to the button
+	document.getElementById('initCluster').addEventListener('click', function() {
+		automata.initializeCentralCluster();
+		gameEngine.addEntity(new Animat({x:randomInt(PARAMETERS.dimension/4),y:randomInt(PARAMETERS.dimension/4),hue:randomInt(360)}, automata));
+		gameEngine.addEntity(new Animat({x:randomInt(PARAMETERS.dimension/4),y:randomInt(PARAMETERS.dimension/4),hue:randomInt(360)}, automata));
+		gameEngine.addEntity(new Animat({x:randomInt(PARAMETERS.dimension/4),y:randomInt(PARAMETERS.dimension/4),hue:randomInt(360)}, automata));
+	});
+
+	document.getElementById('initCorner').addEventListener('click', function() {
+		automata.initializeCorners();
+		gameEngine.addEntity(new Animat({x:randomInt(PARAMETERS.dimension/4),y:randomInt(PARAMETERS.dimension/4),hue:randomInt(360)}, automata));
+		gameEngine.addEntity(new Animat({x:randomInt(PARAMETERS.dimension/4),y:randomInt(PARAMETERS.dimension/4),hue:randomInt(360)}, automata));
+		gameEngine.addEntity(new Animat({x:randomInt(PARAMETERS.dimension/4),y:randomInt(PARAMETERS.dimension/4),hue:randomInt(360)}, automata));
+	});
+	
+
 	gameEngine.init(ctx);
 
 	gameEngine.start();
